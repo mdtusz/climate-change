@@ -1,0 +1,45 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #222;
+  color: #bcbcbc;
+  font-family: 'Oxygen', sans-serif;
+  font-weight: 100;
+}
+.orange{
+  color: #EA8A5E;
+}
+p{
+  font-size: 14px;
+}
+.info{
+  width: 90%;
+  max-width: 860px;
+  padding: 10px;
+  margin: 0 auto 40px;
+  border-bottom: 1px solid #EA8A5E;
+}
+#plot{
+  margin: 0 auto;
+  padding: 0;
+  width: 80%;
+  max-width: 1024px;
+  height: 80%;
+}
+.controls{
+  font-size: 12px;
+  margin-bottom: 20px;
+}
+input{
+  display: block;
+  width: 80%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+#slider-values{
+  width: 100%;
+  text-align: center;
+  display: block;
+}

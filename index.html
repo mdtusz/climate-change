@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>It's getting warmer.</title>    
+    <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="info">
+      <h2>It's getting <span class="orange">warmer</span>.</h2>
+      <p>
+        This graphic displays the land-surface average results produced by the Berkeley Averaging method. Temperatures are in Celsius and reported as anomalies relative to the Jan 1951-Dec 1980 average. Because of less precise and normal data going back in time, the spread becomes larger as you near to 1800, but by adjusting the sliders of the start and end years, you will see a prevailing increase.
+      </p>
+      <p>
+        Data source: <a href="http://berkeleyearth.lbl.gov/auto/Global/Complete_TAVG_complete.txt" class="orange">berkeleyearth.org</a>.
+      </p>
+    </div>
+    <div class="controls">
+      <input id="slider-from" type="range" min="1800" max="2014" value="1800">
+      <span id='slider-values'>1880 - 2014</span>
+      <input id="slider-to" type="range" min="1800" max="2014" value="2014">  
+    </div>
+    <div id="plot"></div>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="main.build.js"></script>
+  </body>
+</html>
